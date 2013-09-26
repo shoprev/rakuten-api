@@ -37,7 +37,9 @@ res["Items"].each do |v|
   ...
 end
 ```
+
 See the [examples directory](https://github.com/shoprev/rakuten-api/tree/master/example) for more usage.
+
 ```ruby
 # Rakuten Ichiba API
 Rakuten::Api::Ichiba::Search      # Ichiba Item Search API (version:2013-08-05)
@@ -86,6 +88,7 @@ Rakuten::Api::Etc::DynamicAd          # Dynamic Ad API
 Rakuten::Api::Etc::DynamicAdTravel    # Dynamic Ad Travel API
 Rakuten::Api::Etc::HighCommissionShop # High Commission Shop API (version:2012-03-13)
 ```
+
 Refer to [Rakuten Web API documentation](https://webservice.rakuten.co.jp/document/) for more infomation.
 
 ## Contributing
