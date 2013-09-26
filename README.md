@@ -35,9 +35,9 @@ res["Items"].each do |v|
   name = v["Item"]["itemName"]
   ...
 end
-
-See the [examples directory]() for more usage.
-
+```
+See the [examples directory](https://github.com/shoprev/rakuten-api/tree/master/example) for more usage.
+```ruby
 # Rakuten Ichiba API
 Rakuten::Api::Ichiba::Search      # Ichiba Item Search API (version:2013-08-05)
 Rakuten::Api::Ichiba::GenreSearch # Ichiba Genre Search API (version:2012-07-23)
