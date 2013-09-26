@@ -1,6 +1,41 @@
 # Rakuten::Api
 
-Ruby Rakuten API using Nokogiri. Uses Response and Element wrapper classes for easy access to the REST API XML output.
+Ruby Rakuten Web API fully supported
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'rakuten-api'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install rakuten-api
+
+## Usage
+
+```ruby
+require "rakuten/api"
+
+# configure
+Rakuten::Api.configure do |options|
+  options[:appid] = 'your api id'
+  options[:affiliate_id] = "your affiliate id"
+end
+
+# Item Search API v1
+res = Yahoo::Api::Shopping.item_search({:category_id => "13457"})
+res.code # 200
+res.message # "OK"
+
+res["ResultSet"]["totalResultsReturned"].times do |i|
+  code = res["ResultSet"]["0"]["Result"]["#{i}"]["Code"]
+  ...
+end
 
 # Ichiba Item Search API (version:2013-08-05)
 # Ichiba Genre Search API (version:2012-07-23)
@@ -48,23 +83,7 @@ Ruby Rakuten API using Nokogiri. Uses Response and Element wrapper classes for e
 # Dynamic Ad Travel API
 # High Commission Shop API (version:2012-03-13)
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'rakuten-api'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install rakuten-api
-
-## Usage
-
-TODO: Write usage instructions here
+```
 
 ## Contributing
 

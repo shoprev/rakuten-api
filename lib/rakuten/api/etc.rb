@@ -12,11 +12,13 @@ module Rakuten
 
         # Dynamic Ad API
         def dynamic_ad(opts={})
+          opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
           Rakuten::Request.get("http://dynamic.rakuten.co.jp/rcm/1.0/i/json", opts.merge(Rakuten::Api.options))
         end
 
         # Dynamic Ad Travel API
         def dynamic_ad_travel(opts={})
+          opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
           Rakuten::Request.get("http://dynamic.rakuten.co.jp/rcm/1.0/t/json", opts.merge(Rakuten::Api.options))
         end
 
