@@ -1,5 +1,6 @@
 # Rakuten::Api
 
+[![Gem Version](https://badge.fury.io/rb/rakuten-api.png)](http://badge.fury.io/rb/rakuten-api)
 Ruby Rakuten Web API fully supported
 
 ## Installation
@@ -27,7 +28,7 @@ Rakuten::Api.configure do |options|
   options[:affiliate_id] = "your affiliate id"
 end
 
-# Item Search API v1
+# Ichiba Item Search API (version:2013-08-05)
 res = Rakuten::Api.get(Rakuten::Api::Ichiba::Search,{:genreId => "101240"})
 res.code # 200
 res.message # "OK"
