@@ -24,7 +24,7 @@ require "rakuten/api"
 
 # configure
 Rakuten::Api.configure do |options|
-  options[:appid] = 'your api id'
+  options[:applicationId] = 'your api id'
   options[:affiliate_id] = "your affiliate id"
 end
 
