@@ -33,7 +33,7 @@ module Rakuten
       end
 
       def merge(opts={})
-        opts.merge(@@options)
+        opts.merge!(@@options)
         p @@options
         p opts
         p opts[:applicationId]
