@@ -34,9 +34,6 @@ module Rakuten
 
       def merge(opts={})
         opts.merge!(@@options)
-        p @@options
-        p opts
-        p opts[:applicationId]
         ids = opts[:applicationId].split(",")
         opts[:applicationId] = ids[rand(ids.size)]
         opts[:developerId] = opts[:applicationId] if opts.key?(:developerId)
@@ -44,7 +41,7 @@ module Rakuten
       end
 
       def get(method,opts={})
-        eval method+"(#{opts})"
+        eval "#{method}(#{opts})"
       end
 
     end
