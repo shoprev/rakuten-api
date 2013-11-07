@@ -41,7 +41,7 @@ module Rakuten
       end
 
       def get(method,opts={})
-        eval "method(#{opts})"
+        eval method+"(#{opts})"
       end
 
     end
