@@ -34,6 +34,7 @@ module Rakuten
 
       def merge(opts={})
         opts.merge(@@options)
+        p opts
         p opts[:applicationId]
         ids = opts[:applicationId].split(",")
         opts[:applicationId] = ids[rand(ids.size)]
