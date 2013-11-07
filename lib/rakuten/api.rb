@@ -32,7 +32,7 @@ module Rakuten
         yield @@options
       end
 
-      def marge(opts={})
+      def merge(opts={})
         opts.merge(@@options)
         ids = opts[:applicationId].split(",")
         opts[:applicationId] = ids[rand(ids.size)]
