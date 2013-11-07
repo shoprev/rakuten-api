@@ -12,17 +12,17 @@ module Rakuten
 
       # Favorite Bookmark List API (version:2012-06-27)
       def list(opts={})
-        Rakuten::Request.get("https://app.rakuten.co.jp/services/api/FavoriteBookmark/List/20120627", opts.merge(Rakuten::Api.options))
+        Rakuten::Request.get("https://app.rakuten.co.jp/services/api/FavoriteBookmark/List/20120627", Rakuten::Api.merge(opts))
       end
 
       # Favorite Bookmark Add API (version:2012-06-27)
       def add(opts={})
-        Rakuten::Request.get("https://app.rakuten.co.jp/services/api/FavoriteBookmark/Add/20120627", opts.merge(Rakuten::Api.options))
+        Rakuten::Request.get("https://app.rakuten.co.jp/services/api/FavoriteBookmark/Add/20120627", Rakuten::Api.merge(opts))
       end
 
       # Favorite Bookmark Delete API (version:2012-06-27)
       def delete(opts={})
-        Rakuten::Request.get("https://app.rakuten.co.jp/services/api/FavoriteBookmark/Delete/20120627", opts.merge(Rakuten::Api.options))
+        Rakuten::Request.get("https://app.rakuten.co.jp/services/api/FavoriteBookmark/Delete/20120627", Rakuten::Api.merge(opts))
       end
 
       end

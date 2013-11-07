@@ -15,7 +15,7 @@ module Rakuten
           opts[:version] = '2010-06-30' unless opts.key?(:version)
           opts[:operation] = 'GoraGolfCourseSearch' unless opts.key?(:operation)
           opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", opts.merge(Rakuten::Api.options))
+          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
         end
 
         # Gora Detail Search API (version:2010-06-30)
@@ -23,7 +23,7 @@ module Rakuten
           opts[:version] = '2010-06-30' unless opts.key?(:version)
           opts[:operation] = 'GoraGolfCourseDetail' unless opts.key?(:operation)
           opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", opts.merge(Rakuten::Api.options))
+          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
         end
 
         # Gora Plan Search API (version:2012-12-10)
@@ -31,7 +31,7 @@ module Rakuten
           opts[:version] = '2012-12-10' unless opts.key?(:version)
           opts[:operation] = 'GoraPlanSearch' unless opts.key?(:operation)
           opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", opts.merge(Rakuten::Api.options))
+          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
         end
 
       end

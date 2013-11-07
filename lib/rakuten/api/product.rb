@@ -15,7 +15,7 @@ module Rakuten
           opts[:version] = '2010-11-18' unless opts.key?(:version)
           opts[:operation] = 'ProductSearch' unless opts.key?(:operation)
           opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", opts.merge(Rakuten::Api.options))
+          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
         end
 
         # Product Detail Search API (version:2011-07-14)
@@ -23,7 +23,7 @@ module Rakuten
           opts[:version] = '2011-07-14' unless opts.key?(:version)
           opts[:operation] = 'ProductDetail' unless opts.key?(:operation)
           opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", opts.merge(Rakuten::Api.options))
+          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
         end
 
         # Product Genre Search API (version:2010-11-18)
@@ -31,7 +31,7 @@ module Rakuten
           opts[:version] = '2010-11-18' unless opts.key?(:version)
           opts[:operation] = 'ProductGenreInfo' unless opts.key?(:operation)
           opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", opts.merge(Rakuten::Api.options))
+          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
         end
 
       end

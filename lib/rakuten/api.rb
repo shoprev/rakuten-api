@@ -32,8 +32,16 @@ module Rakuten
         yield @@options
       end
 
+      def marge(opts={})
+        opts.merge(@@options)
+        ids = opts[:applicationId].split(",")
+        opts[:applicationId] = ids[rand(ids.size)]
+        opts[:developerId] = opts[:applicationId] if opts.key?(:developerId)
+        opts
+      end
+
       def get(method,opts={})
-        eval method+"(#{opts})"
+        eval "method(#{opts})"
       end
 
     end
