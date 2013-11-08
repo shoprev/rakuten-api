@@ -36,7 +36,7 @@ module Rakuten
 
         # Travel Keyword Search API (version:2013-10-24)           
         def keyword_search(opts={})
-          Rakuten::Request.get("https://app.rakuten.co.jp/services/api/Travel/HotelKeywordSearch/20131024", Rakuten::Api.merge(opts))
+          Rakuten::Request.get("https://app.rakuten.co.jp/services/api/Travel/KeywordHotelSearch/20131024", Rakuten::Api.merge(opts))
         end
 
         # Travel Chain List API (version:2013-10-24)           
