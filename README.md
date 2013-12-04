@@ -30,8 +30,8 @@ end
 
 # Ichiba Item Search API (version:2013-08-05)
 res = Rakuten::Api.get(Rakuten::Api::Ichiba::Search,{:genreId => "101240"})
-res.code # 200
-res.message # "OK"
+p res.code # 200
+p res.message # "OK"
 res["Items"].each do |v|
   name = v["Item"]["itemName"]
   ...
@@ -87,6 +87,9 @@ Rakuten::Api::Gora::PlanSearch   # Gora Plan Search API (version:2013-11-13)
 Rakuten::Api::Etc::DynamicAd          # Dynamic Ad API
 Rakuten::Api::Etc::DynamicAdTravel    # Dynamic Ad Travel API
 Rakuten::Api::Etc::HighCommissionShop # High Commission Shop API (version:2012-03-13)
+# Rakuten Kobo API
+Rakuten::Api::Kobo::Search      # Kobo Ebook Search API (version:2013-10-10)
+Rakuten::Api::Kobo::GenreSearch # Kobo Genre Search API (version:2013-10-10)
 ```
 
 Refer to [Rakuten Web API documentation](https://webservice.rakuten.co.jp/document/) for more infomation.
