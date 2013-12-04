@@ -21,9 +21,9 @@ module Rakuten
           Rakuten::Request.get("https://app.rakuten.co.jp/services/api/AuctionGenreKeyword/Search/20120927", Rakuten::Api.merge(opts))
         end
 
-        # Auction Item Search API (version:2013-01-10)
+        # Auction Item Search API (version:2013-09-05)
         def search(opts={})
-          Rakuten::Request.get("https://app.rakuten.co.jp/services/api/AuctionItem/Search/20130110", Rakuten::Api.merge(opts))
+          Rakuten::Request.get("https://app.rakuten.co.jp/services/api/AuctionItem/Search/20130905", Rakuten::Api.merge(opts))
         end
 
         # Auction Item Code Search API (version:2012-10-10)

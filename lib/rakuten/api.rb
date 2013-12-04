@@ -14,6 +14,7 @@ require "rakuten/api/ichiba"
 require "rakuten/api/product"
 require "rakuten/api/recipe"
 require "rakuten/api/travel"
+require "rakuten/api/kobo"
 
 module Rakuten
 

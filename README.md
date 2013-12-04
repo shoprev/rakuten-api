@@ -62,7 +62,7 @@ Rakuten::Api::Books::GenreSearch       # Books Genre Search API (version:2012-11
 # Rakuten Auction API
 Rakuten::Api::Auction::GenreSearch        # Auction Genre Search API (version:2012-09-27)
 Rakuten::Api::Auction::GenreKeywordSearch # Auction Genre Keyword Search API (version:2012-09-27)
-Rakuten::Api::Auction::Search             # Auction Item Search API (version:2013-01-10)
+Rakuten::Api::Auction::Search             # Auction Item Search API (version:2013-09-05)
 Rakuten::Api::Auction::CodeSearch         # Auction Item Code Search API (version:2012-10-10)
 # Rakuten Travel API
 Rakuten::Api::Travel::Search        # Travel Search API (version:2013-10-24)
@@ -80,9 +80,9 @@ Rakuten::Api::Bookmark::Delete # Favorite Bookmark Delete API (version:2012-06-2
 Rakuten::Api::Recipe::CategoryList    # Recipe Category List API (version:2012-11-21)
 Rakuten::Api::Recipe::CategoryRanking # Recipe Category Ranking API (version:2012-11-21)
 # Rakuten GORA API
-Rakuten::Api::Gora::Search       # Gora Search API (version:2010-06-30)
-Rakuten::Api::Gora::DetailSearch # Gora Detail Search API (version:2010-06-30)
-Rakuten::Api::Gora::PlanSearch   # Gora Plan Search API (version:2012-12-10)
+Rakuten::Api::Gora::Search       # Gora Search API (version:2013-11-13)
+Rakuten::Api::Gora::DetailSearch # Gora Detail Search API (version:2013-11-13)
+Rakuten::Api::Gora::PlanSearch   # Gora Plan Search API (version:2013-11-13)
 # Rakuten Etc API
 Rakuten::Api::Etc::DynamicAd          # Dynamic Ad API
 Rakuten::Api::Etc::DynamicAdTravel    # Dynamic Ad Travel API

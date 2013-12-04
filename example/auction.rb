@@ -12,7 +12,7 @@ res["auctionGenreList"].each do |v|
   p v["fullGenrePath"]
 end
 
-# Auction Item Search API (version:2013-01-10)
+# Auction Item Search API (version:2013-09-05)
 res = Rakuten::Api.get(Rakuten::Api::Auction::Search,{:keyword => "CD"})
 res["Items"].each do |v|
   p v["Item"]["itemName"]

@@ -10,28 +10,19 @@ module Rakuten
 
       class << self
 
-        # Gora Search API (version:2010-06-30)
+        # Gora Search API (version:2013-11-13)
         def search(opts={})
-          opts[:version] = '2010-06-30' unless opts.key?(:version)
-          opts[:operation] = 'GoraGolfCourseSearch' unless opts.key?(:operation)
-          opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
+          Rakuten::Request.get("https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseSearch/20131113", Rakuten::Api.merge(opts))
         end
 
-        # Gora Detail Search API (version:2010-06-30)
+        # Gora Detail Search API (version:2013-11-13)
         def detail_search(opts={})
-          opts[:version] = '2010-06-30' unless opts.key?(:version)
-          opts[:operation] = 'GoraGolfCourseDetail' unless opts.key?(:operation)
-          opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
+          Rakuten::Request.get("https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseDetail/20131113", Rakuten::Api.merge(opts))
         end
 
-        # Gora Plan Search API (version:2012-12-10)
+        # Gora Plan Search API (version:2013-11-13)
         def plan_search(opts={})
-          opts[:version] = '2012-12-10' unless opts.key?(:version)
-          opts[:operation] = 'GoraPlanSearch' unless opts.key?(:operation)
-          opts[:developerId] = Rakuten::Api.options[:applicationId] unless opts.key?(:developerId)
-          Rakuten::Request.get("http://api.rakuten.co.jp/rws/3.0/json", Rakuten::Api.merge(opts))
+          Rakuten::Request.get("https://app.rakuten.co.jp/services/api/Gora/GoraPlanSearch/20131113", Rakuten::Api.merge(opts))
         end
 
       end
